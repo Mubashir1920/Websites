@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <style>
+
+    body{
+      background-color: black;
+      color: 	#F0EAD6;
+
+    }
+    .btn{
+      color: white !important;
+    }
+    .success, .error {
+      color: white;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 5px 0 15px 0;
+    }
+
+    .success {
+      background: green;
+    }
+
+    .error {
+      background: rgba(145, 14, 14, 0.493);
+    }
+
+    .hd1{
+        font-size: 50px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top:20px ;
+    }
+
+    .delete-items{
+        text-decoration: none;
+    }
+    .field{
+      background-color: #555 !important;
+      color: white !important;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+
+  </style>
+  <title>Todo List</title>
+</head>
+<body>
+
+
+    <h1 class="hd1">Todo List</h1>
+  <div class="container">
+    <h3 ">Add Tasks</h3>
+
+
+    <form id="task-form">
+      <div>
+        <label for="title">Task</label>
+        <input type="text" id="name" class="field u-full-width">
+      </div>
+      <div>
+        <input type="submit" value="Submit" class="btn u-full-width">
+      </div>      
+    </form>
+    
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Tasks</th>
+        </tr>
+      </thead>
+      <tbody id="task-list">
+        
+      </tbody>
+    </table>    
+  </div>
+
+
+
+
+  <div class="container">
+      <input type="submit" value="Clear"  class="u-full-width btn clear">
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
